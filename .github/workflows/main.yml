@@ -26,6 +26,5 @@ jobs:
         uses: actions/checkout@v2
       - name: CFML TestBox Action
         uses: coldfumonkeh/cfml-testbox-action@v1
-        id: ${{ matrix.cfml_engine }}_test
         with:
           cfml-engine: ${{ matrix.cfml_engine }}
