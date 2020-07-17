@@ -28,10 +28,3 @@ jobs:
         uses: coldfumonkeh/cfml-testbox-action@v1
         with:
           cfml-engine: ${{ matrix.cfml_engine }}
-      - name: Publish test Results
-        uses: PublishTestResults@2
-        with:
-          testResultsFormat: 'JUnit'
-          testResultsFiles: '**/testbox.xml' 
-          testRunTitle: TestBox Tests
-          failTaskOnFailedTests: true
